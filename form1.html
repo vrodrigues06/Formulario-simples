@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8" /> 
+        <title> FormOne</title>
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"> 
+        <link rel="stylesheet" href="form1 style.css"/> 
+        <style> 
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+         }        
+         .box {
+            position:absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: auto;
+            color:white;
+            }
+        </style>
+        <!--FOI USADO A DIV .BOX e o Conteúdo dentro para centralizar o formulário.-->
+    </head>
+
+    <body> 
+        <div class="box"> 
+            <form action=""> 
+                <fieldset> 
+                    <legend> 
+                        <strong> Formulário de Cadastro </strong>  
+                    </legend>
+                        <br/> 
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" class="inputUser" required minlength="2" autofocus> 
+                        <label for="name" class="labelinput" > Nome Completo </label>
+                        <br/> <br/> 
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" required/> 
+                         <label for="email" class="labelinput"> E-mail </label>
+                        <br/> <br/> 
+                    </div>
+                    <div class="inputBox"> 
+                         <input type="tel" name="tel" id="tel" class="inputUser" required minlength="9"/>
+                        <label for="tel" class="labelinput" > Celular </label>
+                        <br/> <br/> 
+                    </div>
+                    <div class="inputBox"> 
+                    <p> Sexo: </p>
+                    <input type="radio" name="sex" id="masculino" value="Masculino" required  />
+                    <label for="masculino" > Masculino </label>
+                    <br/> 
+                     <input type="radio" name="sex" id="feminino" value="Feminino" required />
+                    <label for="feminino" > Feminino </label>
+                    <br/> 
+                    <input type="radio" name="sex" id="outro" value="Outro" required  />
+                    <label for="outro" > Outro </label>
+                    <br/> 
+                     </div>
+                        <br/> 
+                        <label for="date" > <strong> Data de Nascimento: </strong> </label>
+                        <input type="date" name="date" id="date"required min="01-01-2004"/>
+                        <br/> <br/> 
+                      <div class="inputBox">
+                        <input type="text" name="city" id="city" class="inputUser"  required />
+                        <label for="city" class="labelinput" > Cidade </label>
+                        <br/> <br/> 
+                        </div>
+                    <div class="inputBox">
+                         <input type="text" name="state" id="state" class="inputUser"  required />
+                        <label for="state" class="labelinput" > Estado </label>
+                        <br/> <br/> 
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="address" id="address" class="inputUser" required  />
+                        <label for="address" class="labelinput" > Endereço </label>
+                        <br/> <br/> 
+                    </div>
+                    <input type="submit" name="submit" id="submit" />
+                </fieldset>
+            </form> 
+        </div>
+    </body>
+</html>

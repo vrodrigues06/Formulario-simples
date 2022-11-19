@@ -1,0 +1,108 @@
+fieldset {
+    color:rgb(255, 255, 255);
+    border: 3px solid dodgerblue;
+    padding: 15px;
+}
+legend {
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+.inputBox {
+    position:relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.inputUser:focus ~ .labelinput, .inputUser:valid ~ .labelinput {
+    top:-20px;
+    font-size:12px;
+    color: dodgerblue;
+
+}
+
+#date {
+    border:none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px; 
+    color:white;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(133, 58, 213));
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(133, 58, 213));
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(21, 16, 100), rgb(95, 72, 120));
+}
+
+
+@media (max-width:900px) {
+    legend {
+        font-size:11px;
+    }
+    fieldset {
+       padding: 6px;
+    }
+    .inputUser {
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+    #date {
+        font-size: 12px;
+        width: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #submit {
+        padding: 5px;
+    }
+    .labelinput {
+        font-size: 12px;
+    }
+
+.inputBox label{
+    font-size: 11px;
+}
+.inputBox p{
+    font-size: 14px;
+}
+label {
+    font-size: 12px;
+    
+}
+.box {
+width: auto;
+height: auto;
+}
+}
+    
